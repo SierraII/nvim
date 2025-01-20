@@ -10,7 +10,7 @@ return {
           highlight TelescopeBorder guibg=none
         ]]
 
-        vim.keymap.set('n', '<leader>pf', builtin.find_files, { desc = "[P]roject File Search" })
+        vim.keymap.set('n', '<leader>pf', builtin.find_files, { desc = "[P]roject [F]ile Search" })
         -- vim.keymap.set('n', '<C-p>', builtin.git_files, { desc = "Git Files" })
         vim.keymap.set('n', '<leader>ps', function()
             builtin.grep_string({ search = vim.fn.input("Grep > ") })
