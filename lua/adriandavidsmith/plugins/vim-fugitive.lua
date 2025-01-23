@@ -5,6 +5,7 @@ return {
         vim.keymap.set("n", "<leader>gs", vim.cmd.Git, { desc = "[G]it [S]tatus" })
         vim.keymap.set("n", "<leader>gpl", ":Git pull<CR>", { desc = "[G]it [P]u[l]l" });
         vim.keymap.set("n", "<leader>gc", ":Git commit -m \"", { desc = "[G]it [C]ommit" });
+        vim.keymap.set("n", "<leader>gd", ":Git diff<CR>", { desc = "[G]it [D]iff" });
 
         -- Push
         vim.keymap.set("n", "<leader>gpu", ":Git push -u origin HEAD<CR>", { desc = "[G]it [Pu]sh" })
