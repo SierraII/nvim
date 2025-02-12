@@ -17,12 +17,13 @@ return {
 
         -- Checkout
         vim.keymap.set("n", "<leader>go", ":Git checkout -b ", { desc = "[G]it Check[o]ut New Branch" })
+        vim.keymap.set("n", "<leader>g.", ":Git checkout .<CR>", { desc = "[G]it Checkout [.]" })
         vim.keymap.set("n", "<leader>gm", ":Git checkout master<CR>", { desc = "[G]it Checkout [M]aster" })
         vim.keymap.set("n", "<leader>g-", ":Git checkout -<CR>", { desc = "[G]it Checkout Alternative Branch" })
 
         -- Rebase and Resolution
-        vim.keymap.set("n", "<leader>g=", "<cmd>diffget //2<CR>", { desc = "[G]it Merge Left (= Far Top Left)" })
-        vim.keymap.set("n", "<leader>g-", "<cmd>diffget //3<CR>", { desc = "[G]it Merge Right (- Far Top Right)" })
+        vim.keymap.set("n", "<leader>g1", "<cmd>diffget //2<CR>", { desc = "[G]it Merge Left (1)" })
+        vim.keymap.set("n", "<leader>g0", "<cmd>diffget //3<CR>", { desc = "[G]it Merge Right (0)" })
         vim.keymap.set("n", "<leader>grem", ":Git rebase master<CR>", { desc = "[G]it [Re]base [M]aster" })
         vim.keymap.set("n", "<leader>gres", "<cmd>Gvdiffsplit!<CR>", { desc = "[G]it [Res]olve Conflitcs" })
         vim.keymap.set("n", "<leader>gre-", ":Git rebase --continue<CR>", { desc = "[G]it [Re]base [-]- continue" })
